@@ -14,7 +14,7 @@ class Server:
     def listen(self):
         while True:
             client_socket, address = self.socket.accept()
-            print("Connection from:", address)
+            print(f"New connection from {address}")
 
             client_name = client_socket.recv(1024).decode()
             client = {'client_name': client_name, 'client_socket': client_socket}
@@ -52,7 +52,7 @@ class Server:
 
 
 if __name__ == "__main__":
-    HOST = '127.0.0.1'
+    HOST = '0.0.0.0'
     PORT = 1234
     server = Server(HOST, PORT)
     server.listen()
