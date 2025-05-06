@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  server:
+    build: .
+    container_name: chat_server
+    ports:
+      - "1234:1234"
+    command: python server.py
+
+  client:
+    build: .
+    container_name: chat_client
+    stdin_open: true
+    tty: true
+    depends_on:
+      - server
+    command: python client.py

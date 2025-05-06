@@ -40,6 +40,6 @@ class Client:
 
 
 if __name__ == "__main__":
-    HOST = '127.0.0.1' 
+    HOST = 'server'
     PORT = 1234
     Client(HOST, PORT)
