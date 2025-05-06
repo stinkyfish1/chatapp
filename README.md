@@ -1,7 +1,3 @@
-Here's a basic technical documentation (TechDocs) for your chat application project, covering the architecture, components, setup, usage, and how to extend it further:
-
----
-
 # 📡 Socket Chat Application – TechDocs
 
 ## 🧩 Overview
@@ -25,7 +21,7 @@ chat-app/
 
 ## 🔧 Technologies Used
 
-* Python 3.x
+* Python
 * `socket` module for TCP communication
 * `threading` module for concurrency
 
@@ -57,7 +53,7 @@ chat-app/
 
 ### Requirements
 
-* Python 3.x
+* Python 3
 
 ### 1. Start the Server
 
